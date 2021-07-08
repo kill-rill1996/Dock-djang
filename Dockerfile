@@ -6,8 +6,8 @@ WORKDIR /src/usr/app/
 COPY .. /src/usr/app/
 RUN pip install --no-cache-dir -r req.txt
 
-EXPOSE 8000
+EXPOSE 80
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:80"]
 
 
